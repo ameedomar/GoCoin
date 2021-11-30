@@ -131,7 +131,7 @@ app.post("/income", function (req, res) {
       if (err) {
         console.log(err);
         res.status(500).send({
-          result: "error",
+          result: "err",
           err,
         });
       } else {
