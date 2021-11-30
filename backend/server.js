@@ -127,11 +127,19 @@ app.post("/income", function (req, res) {
   con.query(
     `INSERT INTO income (email,income) VALUES (?,?) `,
     [email, income],
-    (err, res) => {
+    (err, qres) => {
       if (err) {
         console.log(err);
+        res.status(500).send({
+          result: "error",
+          err,
+        });
       } else {
         console.log(fullName);
+        res.send({
+          result: "success",
+          id: 5,
+        });
       }
     }
   );
