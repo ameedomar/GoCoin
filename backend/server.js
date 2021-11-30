@@ -129,13 +129,11 @@ app.post("/income", function (req, res) {
     [email, income],
     (err, qres) => {
       if (err) {
-        console.log(err);
         res.status(500).send({
           status: "error",
           err,
         });
       } else {
-        console.log(fullName);
         res.send({
           status: "success",
           id: 5,
