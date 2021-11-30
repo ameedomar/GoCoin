@@ -1,0 +1,31 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "node server",
+    "watch": "nodemon server",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "global": "^4.4.0",
+    "moment": "^2.29.1",
+    "mysql": "^2.18.1",
+    "mysqli": "^3.1.4",
+    "npm-user-validate": "^1.0.1" 
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0"
+  },
+  "private": true,
+  "name": "gocoinp2",
+  "version": "1.0.0",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
